@@ -5,6 +5,10 @@ import (
 	"sync"
 )
 
+// Question: Write a Go program that uses goroutines and channels to print a sequence of numbers starting from 1 to 100.
+// Each goroutine should print whether the number is even or odd. The program should terminate when the number exceeds 100.
+
+// Answer:
 func worker(ch chan int, wg *sync.WaitGroup) {
 	defer wg.Done()
 	for {
