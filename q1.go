@@ -29,7 +29,7 @@ func worker(ch chan int, wg *sync.WaitGroup) {
 	}
 }
 
-func PrintAllNumberInSequence() {
+func __main() {
 	var wg sync.WaitGroup
 	counter := 1
 	ch := make(chan int)
